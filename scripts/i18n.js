@@ -15,7 +15,7 @@ const translations = {
     remove: 'Spieler entfernen',
     round: 'Runde',
     total: 'Summe',
-    history: 'Punkteverlauf',
+    history: 'Punkteverlauf'
     dice: 'Würfel',
     rollDice: 'Würfeln'
     showRules: '?',
@@ -38,7 +38,7 @@ const translations = {
     remove: 'Remove player',
     round: 'Round',
     total: 'Total',
-    history: 'Score history',
+    history: 'Score history'
     dice: 'Dice',
     rollDice: 'Roll'
     showRules: '?',

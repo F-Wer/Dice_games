@@ -3,16 +3,11 @@
   const addPlayerBtn = document.getElementById('add-player');
   const playerNameInput = document.getElementById('player-name');
   const resetBtn = document.getElementById('reset');
-  const diceToggle = document.getElementById('dice-toggle');
-  const diceOverlay = document.getElementById('dice-overlay');
-  const dice = document.getElementById('dice');
-  const diceResult = document.getElementById('dice-result');
 
   function applyTexts() {
     addPlayerBtn.textContent = t('addPlayer');
     playerNameInput.placeholder = t('playerName');
     resetBtn.textContent = t('resetGame');
-    if (diceToggle) diceToggle.textContent = t('dice');
     render();
   }
   window.scorekeeperTexts = applyTexts;
@@ -152,30 +147,6 @@
     }
   });
 
-  function rollDice() {
-    const result = Math.floor(Math.random() * 6) + 1;
-    diceResult.textContent = result;
-    const rotations = [
-      'rotateX(0deg) rotateY(0deg)',
-      'rotateX(-90deg) rotateY(0deg)',
-      'rotateY(90deg) rotateX(0deg)',
-      'rotateY(-90deg) rotateX(0deg)',
-      'rotateX(90deg) rotateY(0deg)',
-      'rotateX(180deg) rotateY(0deg)'
-    ];
-    dice.style.transform = rotations[result - 1];
-  }
-
-  if (diceToggle) {
-    diceToggle.addEventListener('click', () => {
-      diceOverlay.style.display = 'flex';
-      rollDice();
-    });
-    diceOverlay.addEventListener('click', () => {
-      diceOverlay.style.display = 'none';
-    });
-    dice.addEventListener('click', rollDice);
-  }
 
   render();
 })();
