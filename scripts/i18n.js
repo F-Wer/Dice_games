@@ -16,6 +16,8 @@ const translations = {
     round: 'Runde',
     total: 'Summe',
     history: 'Punkteverlauf',
+    dice: 'Würfel',
+    rollDice: 'Würfeln'
   },
   en: {
     appTitle: 'Games',
@@ -34,5 +36,7 @@ const translations = {
     round: 'Round',
     total: 'Total',
     history: 'Score history',
+    dice: 'Dice',
+    rollDice: 'Roll'
   }
 };
