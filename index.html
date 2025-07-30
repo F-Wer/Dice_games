@@ -13,6 +13,10 @@
       <option value="scorekeeper">Punktzähler</option>
       <option value="imposter">Imposter</option>
     </select>
+    <select id="lang-select">
+      <option value="de">Deutsch</option>
+      <option value="en">English</option>
+    </select>
   </header>
 
   <main>
@@ -23,6 +27,7 @@
       </section>
 
       <ul id="players"></ul>
+      <div id="history-container"></div>
 
       <button id="reset">Spiel zurücksetzen</button>
     </div>
@@ -44,10 +49,10 @@
     </div>
   </main>
 
-  <script src="i18n.js"></script>
-  <script src="imposter-data.js"></script>
-  <script src="shared.js"></script>
-  <script src="scorekeeper.js"></script>
-  <script src="imposter.js"></script>
+  <script src="scripts/i18n.js"></script>
+  <script src="scripts/imposter/imposter-data.js"></script>
+  <script src="scripts/shared.js"></script>
+  <script src="scripts/scorekeeper/scorekeeper.js"></script>
+  <script src="scripts/imposter/imposter.js"></script>
 </body>
 </html>
