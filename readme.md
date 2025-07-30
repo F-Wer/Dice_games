@@ -14,6 +14,7 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 - ✅ Automatischer Darkmode je nach System-Einstellung
 - ✅ Persistente Speicherung über LocalStorage
 - ✅ Mehrsprachige Texte über eine kleine i18n-Datei
+- ✅ Sprache wird automatisch erkannt und kann per Dropdown gewechselt werden
 
 ## 🚀 Verwendung
 
@@ -34,7 +35,9 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
    - Der Startspieler wird zufällig bestimmt.
    - Der Look passt sich automatisch dem hellen oder dunklen System-Design an.
 
-4. Alle Daten werden automatisch im Browser gespeichert und stehen offline zur Verfügung.
+4. Über das Sprachmenü lässt sich die Anzeige zwischen Deutsch und Englisch wechseln. Die Wahl wird im Browser gespeichert.
+
+5. Alle Daten werden automatisch im Browser gespeichert und stehen offline zur Verfügung.
 
 ## Lizenz
 

@@ -10,17 +10,34 @@
   const impNextBtn = document.getElementById('imposter-next');
   const impResetBtn = document.getElementById('imposter-reset');
 
-  impAddBtn.textContent = t('addPlayer');
-  impInput.placeholder = t('playerName');
-  impStartBtn.textContent = t('startGame');
-  impNextBtn.textContent = t('nextPlayer');
-  impResetBtn.textContent = t('resetGame');
+  function updateNextBtn() {
+    if (!round) {
+      impNextBtn.textContent = t('nextPlayer');
+    } else if (round.idx >= impPlayers.length) {
+      impNextBtn.textContent = t('done');
+    } else {
+      const nextName = impPlayers[(round.startIdx + round.idx) % impPlayers.length].name;
+      impNextBtn.textContent = `${t('nextPlayer')}: ${nextName}`;
+    }
+  }
+
+  function applyTexts() {
+    impAddBtn.textContent = t('addPlayer');
+    impInput.placeholder = t('playerName');
+    impStartBtn.textContent = t('startGame');
+    impResetBtn.textContent = t('resetGame');
+    updateNextBtn();
+    renderImpPlayers();
+  }
+  window.imposterTexts = applyTexts;
 
   let impPlayers = utils.load('imposterPlayers', []);
   impPlayers.forEach(p => {
     if (!('revealed' in p)) p.revealed = false;
   });
   let round = null;
+
+  applyTexts();
 
   function saveImp() { utils.save('imposterPlayers', impPlayers); }
 

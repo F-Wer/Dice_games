@@ -4,12 +4,18 @@
   const playerNameInput = document.getElementById('player-name');
   const resetBtn = document.getElementById('reset');
 
-  addPlayerBtn.textContent = t('addPlayer');
-  playerNameInput.placeholder = t('playerName');
-  resetBtn.textContent = t('resetGame');
+  function applyTexts() {
+    addPlayerBtn.textContent = t('addPlayer');
+    playerNameInput.placeholder = t('playerName');
+    resetBtn.textContent = t('resetGame');
+    render();
+  }
+  window.scorekeeperTexts = applyTexts;
 
   let players = utils.load('skPlayers', []);
   players.forEach(p => { if (!p.history) p.history = []; });
+
+  applyTexts();
 
   function save() {
     utils.save('skPlayers', players);
