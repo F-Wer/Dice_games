@@ -22,3 +22,12 @@ Eine einfache, mobile-freundliche Webanwendung zur Punkteverwaltung für Würfel
    ```bash
    git clone https://github.com/dein-benutzername/wuerfel-zaehler.git
    cd wuerfel-zaehler
+   ```
+
+2. **Öffne die Datei `index.html`** in deinem Browser. Es ist keine Installation notwendig.
+
+3. **Spieler hinzufügen** und mit den Buttons `+50` bzw. `-50` Punkte anpassen. Alle Daten werden automatisch im Browser gespeichert.
+
+4. **Reset**: Mit dem Button "Spiel zurücksetzen" wird der aktuelle Spielstand gelöscht.
+
+Die App funktioniert komplett offline und eignet sich daher ideal für mobile Geräte.
