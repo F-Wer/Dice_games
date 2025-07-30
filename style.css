@@ -10,13 +10,19 @@ header {
   margin-bottom: 1rem;
 }
 
-#player-form {
+header select {
+  margin-top: 0.5rem;
+}
+
+#player-form,
+#imposter-player-form {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
-#players {
+#players,
+#imposter-players {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem;
@@ -35,6 +41,11 @@ header {
 
 .player-name {
   flex: 1;
+}
+
+#imposter-display {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 600px) {
