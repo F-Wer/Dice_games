@@ -3,25 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Würfelspiel Zähler</title>
+  <title>Spiele</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Würfelspiel Zähler</h1>
+    <h1 id="app-title">Spiele</h1>
+    <select id="game-select">
+      <option value="scorekeeper">Punktzähler</option>
+      <option value="imposter">Imposter</option>
+    </select>
   </header>
 
   <main>
-    <section id="player-form">
-      <input type="text" id="player-name" placeholder="Spielername" />
-      <button id="add-player">Spieler hinzufügen</button>
-    </section>
+    <div id="scorekeeper">
+      <button id="scorekeeper-help" class="help">?</button>
+      <section id="player-form">
+        <input type="text" id="player-name" placeholder="Spielername" />
+        <button id="add-player">Spieler hinzufügen</button>
+      </section>
 
-    <ul id="players"></ul>
+      <ul id="players"></ul>
 
-    <button id="reset">Spiel zurücksetzen</button>
+      <button id="reset">Spiel zurücksetzen</button>
+    </div>
+
+    <div id="imposter-game" style="display:none;">
+      <button id="imposter-help" class="help">?</button>
+      <section id="imposter-player-form">
+        <input type="text" id="imposter-player-name" placeholder="Spielername" />
+        <button id="imposter-add-player">Spieler hinzufügen</button>
+      </section>
+      <button id="imposter-start">Spiel starten</button>
+      <div id="imposter-display" style="display:none;">
+        <p id="imposter-current"></p>
+        <p id="imposter-category"></p>
+        <p id="imposter-word"></p>
+        <button id="imposter-next">Nächster Spieler</button>
+      </div>
+      <ul id="imposter-players"></ul>
+    </div>
   </main>
 
+  <script src="i18n.js"></script>
+  <script src="imposter-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
