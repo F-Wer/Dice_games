@@ -13,6 +13,9 @@ const translations = {
     scoreAmount: 'Punkte',
     updateScore: 'Speichern',
     remove: 'Spieler entfernen',
+    showRules: '?',
+    rulesScorekeeper: 'Füge Spieler hinzu und notiere nach jeder Runde die Punkte.',
+    rulesImposter: 'Ein Spieler bekommt "IMPOSTER" statt des Wortes. Findet den Betrüger!'
   },
   en: {
     appTitle: 'Games',
@@ -28,5 +31,8 @@ const translations = {
     scoreAmount: 'Points',
     updateScore: 'Apply',
     remove: 'Remove player',
+    showRules: '?',
+    rulesScorekeeper: 'Add players and record points after each round.',
+    rulesImposter: 'One player sees "IMPOSTER" instead of the word. Find out who it is!'
   }
 };
