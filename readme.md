@@ -39,3 +39,4 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 ## Lizenz
 
 Dieses Projekt steht unter der [CC0 1.0](LICENSE).
+
