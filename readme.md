@@ -1,24 +1,32 @@
-# 🎲 Zählwebapp für Würfelspiele
+# 🎲 Spiele
 
-Eine einfache, mobile-freundliche Webanwendung zur Punkteverwaltung für Würfelspiele wie **10000**, **Kniffel**, **Mäxchen**, und andere Klassiker. Die App speichert alle Daten **lokal im Browser** und funktioniert komplett **offline** – ideal für unterwegs oder Spieleabende ohne Internet.
+Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Daten werden **lokal im Browser** gespeichert und die Seite funktioniert komplett **offline**.
 
 ## 🔧 Features
 
-- ✅ Unterstützung für beliebige Würfelspiele
-- ✅ Spielstand-Verwaltung für mehrere Spieler
-- ✅ Offline-Nutzung ohne Account oder Anmeldung
-- ✅ Mobile-first Design: optimal für Smartphones & Tablets
+- ✅ Punkteverwaltung für Würfelspiele (Scorekeeper) mit frei wählbaren Punktzahlen
+- ✅ Neuer Spielmodus "Imposter" mit umfangreichen Kategorien und Begriffen (siehe `imposter-data.js`)
+- ✅ ?-Buttons erklären kurz die Regeln der Spiele
+- ✅ Mobile-first Design
+- ✅ Automatischer Darkmode je nach System-Einstellung
 - ✅ Persistente Speicherung über LocalStorage
-- ✅ Einfaches Hinzufügen, Bearbeiten und Zurücksetzen von Punkten
-
-## 📱 Screenshots
-
-*(Füge hier Screenshots der App auf Smartphone/Tablet ein, z. B. mit Platzhaltern wie `./screenshots/mobile-view.png`)*
+- ✅ Mehrsprachige Texte über eine kleine i18n-Datei
 
 ## 🚀 Verwendung
 
-1. **Clone das Repository**:
+1. **Repository klonen**
 
    ```bash
-   git clone https://github.com/dein-benutzername/wuerfel-zaehler.git
-   cd wuerfel-zaehler
+   git clone <dieses-repo>
+   cd <ordner>
+   ```
+
+2. **`index.html` im Browser öffnen.** Es ist keine Installation notwendig.
+
+3. Über das Dropdown oben kann zwischen den Spielen gewechselt werden.
+   - **Scorekeeper**: Spieler hinzufügen und pro Runde die erreichten Punkte eintragen.
+   - **Imposter**: Spieler hinzufügen, Spiel starten und jedem Spieler sein Wort zeigen. Ein zufälliger Spieler sieht stattdessen "Imposter".
+   - Über die ?-Buttons erhältst du eine Kurzbeschreibung der Regeln.
+   - Der Look passt sich automatisch dem hellen oder dunklen System-Design an.
+
+4. Alle Daten werden automatisch im Browser gespeichert und stehen offline zur Verfügung.
