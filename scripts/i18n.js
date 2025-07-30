@@ -13,6 +13,9 @@ const translations = {
     scoreAmount: 'Punkte',
     updateScore: 'Speichern',
     remove: 'Spieler entfernen',
+    round: 'Runde',
+    total: 'Summe',
+    history: 'Punkteverlauf'
   },
   en: {
     appTitle: 'Games',
@@ -28,5 +31,8 @@ const translations = {
     scoreAmount: 'Points',
     updateScore: 'Apply',
     remove: 'Remove player',
+    round: 'Round',
+    total: 'Total',
+    history: 'Score history'
   }
 };
