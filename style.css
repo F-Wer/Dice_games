@@ -147,6 +147,7 @@ button:hover {
 }
 
 
+
 @media (min-width: 600px) {
   body {
     max-width: 400px;
@@ -210,5 +211,6 @@ button:hover {
   button:hover {
     background-color: #434190;
   }
+
 
 }

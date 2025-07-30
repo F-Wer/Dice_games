@@ -17,6 +17,7 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 - ✅ Persistente Speicherung über LocalStorage
 - ✅ Mehrsprachige Texte über eine kleine i18n-Datei
 - ✅ Sprache wird automatisch erkannt und kann per Dropdown gewechselt werden
+- ✅ "?"-Buttons zeigen die Regeln der Spielmodi an
 
 ## 🚀 Verwendung
 
@@ -36,6 +37,7 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
    - Das Spiel kann jederzeit über "Spiel zurücksetzen" neu gestartet werden.
    - Der Startspieler wird zufällig bestimmt.
    - Der Look passt sich automatisch dem hellen oder dunklen System-Design an.
+   - Über die "?"-Buttons lassen sich die Regeln anzeigen.
 
 4. Über das Sprachmenü lässt sich die Anzeige zwischen Deutsch und Englisch wechseln. Die Wahl wird im Browser gespeichert.
 
