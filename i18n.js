@@ -11,6 +11,7 @@ const translations = {
     revealWord: 'Wort anzeigen',
     scoreAmount: 'Punkte',
     updateScore: 'Speichern',
+    remove: 'Entfernen',
   },
   en: {
     appTitle: 'Games',
@@ -24,5 +25,6 @@ const translations = {
     revealWord: 'Reveal word',
     scoreAmount: 'Points',
     updateScore: 'Apply',
+    remove: 'Remove',
   }
 };

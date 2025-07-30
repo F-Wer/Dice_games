@@ -39,9 +39,14 @@
         }
       });
 
+      const removeBtn = document.createElement('button');
+      removeBtn.textContent = t('remove');
+      removeBtn.addEventListener('click', () => removePlayer(index));
+
       li.appendChild(span);
       li.appendChild(input);
       li.appendChild(addBtn);
+      li.appendChild(removeBtn);
 
       const hist = document.createElement('ul');
       hist.className = 'history';
@@ -59,6 +64,12 @@
   function updateScore(index, delta) {
     players[index].score += delta;
     players[index].history.push(delta);
+    save();
+    render();
+  }
+
+  function removePlayer(index) {
+    players.splice(index, 1);
     save();
     render();
   }
