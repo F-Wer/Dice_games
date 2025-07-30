@@ -19,23 +19,25 @@
     </select>
   </header>
 
-  <main>
-    <div id="scorekeeper">
-      <section id="player-form">
-        <input type="text" id="player-name" placeholder="Spielername" />
-        <button id="add-player">Spieler hinzufügen</button>
-      </section>
+    <main>
+      <div id="scorekeeper">
+        <button id="scorekeeper-help">?</button>
+        <section id="player-form">
+          <input type="text" id="player-name" placeholder="Spielername" />
+          <button id="add-player">Spieler hinzufügen</button>
+        </section>
 
       <ul id="players"></ul>
 
       <button id="reset">Spiel zurücksetzen</button>
     </div>
 
-    <div id="imposter-game" style="display:none;">
-      <section id="imposter-player-form">
-        <input type="text" id="imposter-player-name" placeholder="Spielername" />
-        <button id="imposter-add-player">Spieler hinzufügen</button>
-      </section>
+      <div id="imposter-game" style="display:none;">
+        <button id="imposter-help">?</button>
+        <section id="imposter-player-form">
+          <input type="text" id="imposter-player-name" placeholder="Spielername" />
+          <button id="imposter-add-player">Spieler hinzufügen</button>
+        </section>
       <button id="imposter-start">Spiel starten</button>
       <div id="imposter-display" style="display:none;">
         <p id="imposter-current"></p>
@@ -51,6 +53,7 @@
   <script src="i18n.js"></script>
   <script src="imposter-data.js"></script>
   <script src="shared.js"></script>
+  <script src="help.js"></script>
   <script src="scorekeeper.js"></script>
   <script src="imposter.js"></script>
 </body>
