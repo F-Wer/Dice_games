@@ -6,11 +6,14 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 
 - ✅ Punkteverwaltung für Würfelspiele (Scorekeeper) mit frei wählbaren Punktzahlen
 - ✅ Anzeige des Punkteverlaufs im Scorekeeper
-- ✅ Neuer Spielmodus "Imposter" mit umfangreichen Kategorien und Begriffen (siehe `imposter-data.js`)
+- ✅ Übersichtliche Verlaufstabelle im Scorekeeper
+- ✅ Virtueller Würfel für den Scorekeeper
+- ✅ Neuer Spielmodus "Imposter" mit umfangreichen Kategorien und Begriffen (siehe `scripts/imposter/imposter-data.js`)
 - ✅ Zufällige Auswahl des Startspielers im Imposter-Modus
 - ✅ Spieler lassen sich entfernen und das Imposter-Spiel kann komplett zurückgesetzt werden
 - ✅ Der aktuelle Spieler wird hervorgehoben und enthüllt sein Wort direkt unter seinem Namen
 - ✅ Mobile-first Design
+- ✅ Responsive Layout passt sich an verschiedene Bildschirmgrößen an
 - ✅ Automatischer Darkmode je nach System-Einstellung
 - ✅ Persistente Speicherung über LocalStorage
 - ✅ Mehrsprachige Texte über eine kleine i18n-Datei
