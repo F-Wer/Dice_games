@@ -46,11 +46,7 @@
       li.appendChild(span);
       li.appendChild(removeBtn);
 
-      const info = document.createElement('div');
-      if (p.revealed) {
-        info.textContent = `${p.category}: ${p.word}`;
-      }
-      li.appendChild(info);
+      // No extra info below the player name while revealing
 
       impPlayersList.appendChild(li);
     });
