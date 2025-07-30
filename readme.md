@@ -5,8 +5,9 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 ## 🔧 Features
 
 - ✅ Punkteverwaltung für Würfelspiele (Scorekeeper) mit frei wählbaren Punktzahlen
+- ✅ Anzeige des Punkteverlaufs im Scorekeeper
 - ✅ Neuer Spielmodus "Imposter" mit umfangreichen Kategorien und Begriffen (siehe `imposter-data.js`)
-- ✅ ?-Buttons erklären kurz die Regeln der Spiele
+- ✅ Zufällige Auswahl des Startspielers im Imposter-Modus
 - ✅ Mobile-first Design
 - ✅ Automatischer Darkmode je nach System-Einstellung
 - ✅ Persistente Speicherung über LocalStorage
@@ -25,8 +26,13 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 
 3. Über das Dropdown oben kann zwischen den Spielen gewechselt werden.
    - **Scorekeeper**: Spieler hinzufügen und pro Runde die erreichten Punkte eintragen.
+   - Die Punktänderungen werden unter jedem Spieler angezeigt.
    - **Imposter**: Spieler hinzufügen, Spiel starten und jedem Spieler sein Wort zeigen. Ein zufälliger Spieler sieht stattdessen "Imposter".
-   - Über die ?-Buttons erhältst du eine Kurzbeschreibung der Regeln.
+   - Der Startspieler wird zufällig bestimmt.
    - Der Look passt sich automatisch dem hellen oder dunklen System-Design an.
 
 4. Alle Daten werden automatisch im Browser gespeichert und stehen offline zur Verfügung.
+
+## Lizenz
+
+Dieses Projekt steht unter der [CC0 1.0](LICENSE).

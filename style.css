@@ -58,24 +58,7 @@ button:hover {
   background-color: #5a67d8;
 }
 
-.help {
-  background-color: #667eea;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  font-weight: 600;
-  cursor: pointer;
-  float: right;
-  margin-bottom: 0.5rem;
-}
 
-.help:hover {
-  background-color: #5a67d8;
-}
 
 #players,
 #imposter-players {
@@ -120,6 +103,13 @@ button:hover {
 .player button:hover {
   background-color: #5a67d8;
 }
+.history {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+  list-style: none;
+  padding: 0;
+}
 
 #imposter-display {
   text-align: center;
@@ -160,13 +150,14 @@ button:hover {
     color: #fff;
   }
 
-  button,
-  .help {
+  button {
     background-color: #4c51bf;
   }
 
-  button:hover,
-  .help:hover {
+  .history {
+    color: #aaa;
+  }
+  button:hover {
     background-color: #434190;
   }
 }
