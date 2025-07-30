@@ -103,6 +103,10 @@ button:hover {
 .player button:hover {
   background-color: #5a67d8;
 }
+
+.current-player {
+  background-color: #ffe69c;
+}
 .history {
   font-size: 0.8rem;
   color: #666;
@@ -156,6 +160,9 @@ button:hover {
 
   .history {
     color: #aaa;
+  }
+  .current-player {
+    background-color: #555b2a;
   }
   button:hover {
     background-color: #434190;

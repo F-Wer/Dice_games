@@ -17,15 +17,19 @@
   impResetBtn.textContent = t('resetGame');
 
   let impPlayers = utils.load('imposterPlayers', []);
+  impPlayers.forEach(p => {
+    if (!('revealed' in p)) p.revealed = false;
+  });
   let round = null;
 
   function saveImp() { utils.save('imposterPlayers', impPlayers); }
 
-  function renderImpPlayers() {
+  function renderImpPlayers(highlightIndex = null) {
     impPlayersList.innerHTML = '';
     impPlayers.forEach((p, i) => {
       const li = document.createElement('li');
       li.className = 'player';
+      if (highlightIndex === i) li.classList.add('current-player');
 
       const span = document.createElement('span');
       span.textContent = p.name;
@@ -41,6 +45,13 @@
 
       li.appendChild(span);
       li.appendChild(removeBtn);
+
+      const info = document.createElement('div');
+      if (p.revealed) {
+        info.textContent = `${p.category}: ${p.word}`;
+      }
+      li.appendChild(info);
+
       impPlayersList.appendChild(li);
     });
   }
@@ -64,8 +75,16 @@
     const pair = randomPair();
     const impIndex = Math.floor(Math.random() * impPlayers.length);
     const startIdx = Math.floor(Math.random() * impPlayers.length);
-    round = { pair, impIndex, startIdx, idx: 0 };
+    impPlayers = impPlayers.map((p, i) => ({
+      name: p.name,
+      category: pair.category,
+      word: i === impIndex ? 'IMPOSTER' : pair.word,
+      revealed: false
+    }));
+    saveImp();
+    round = { impIndex, startIdx, idx: 0 };
     impDisplay.style.display = 'block';
+    renderImpPlayers();
     showNext();
   });
 
@@ -74,14 +93,24 @@
     if (round.idx >= impPlayers.length) {
       impDisplay.style.display = 'none';
       round = null;
+      renderImpPlayers();
       return;
     }
     const playerIndex = (round.startIdx + round.idx) % impPlayers.length;
     const current = impPlayers[playerIndex];
+    current.revealed = true;
     impCurrent.textContent = current.name;
-    impCategory.textContent = round.pair.category;
-    impWord.textContent = playerIndex === round.impIndex ? 'IMPOSTER' : round.pair.word;
+    impCategory.textContent = current.category;
+    impWord.textContent = current.word;
+    renderImpPlayers(playerIndex);
     round.idx++;
+
+    if (round.idx >= impPlayers.length) {
+      impNextBtn.textContent = t('done');
+    } else {
+      const nextName = impPlayers[(round.startIdx + round.idx) % impPlayers.length].name;
+      impNextBtn.textContent = `${t('nextPlayer')}: ${nextName}`;
+    }
   }
 
   impNextBtn.addEventListener('click', showNext);

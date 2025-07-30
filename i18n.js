@@ -6,12 +6,13 @@ const translations = {
     resetGame: 'Spiel zurücksetzen',
     startGame: 'Spiel starten',
     nextPlayer: 'Nächster Spieler',
+    done: 'Fertig',
     scorekeeper: 'Punktzähler',
     imposter: 'Imposter',
     revealWord: 'Wort anzeigen',
     scoreAmount: 'Punkte',
     updateScore: 'Speichern',
-    remove: 'Entfernen',
+    remove: 'Spieler entfernen',
   },
   en: {
     appTitle: 'Games',
@@ -20,11 +21,12 @@ const translations = {
     resetGame: 'Reset game',
     startGame: 'Start game',
     nextPlayer: 'Next player',
+    done: 'Done',
     scorekeeper: 'Scorekeeper',
     imposter: 'Imposter',
     revealWord: 'Reveal word',
     scoreAmount: 'Points',
     updateScore: 'Apply',
-    remove: 'Remove',
+    remove: 'Remove player',
   }
 };

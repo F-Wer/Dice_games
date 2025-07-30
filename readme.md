@@ -9,6 +9,7 @@ Eine einfache, mobile-freundliche Webapp mit verschiedenen Minispielen. Alle Dat
 - ✅ Neuer Spielmodus "Imposter" mit umfangreichen Kategorien und Begriffen (siehe `imposter-data.js`)
 - ✅ Zufällige Auswahl des Startspielers im Imposter-Modus
 - ✅ Spieler lassen sich entfernen und das Imposter-Spiel kann komplett zurückgesetzt werden
+- ✅ Der aktuelle Spieler wird hervorgehoben und enthüllt sein Wort direkt unter seinem Namen
 - ✅ Mobile-first Design
 - ✅ Automatischer Darkmode je nach System-Einstellung
 - ✅ Persistente Speicherung über LocalStorage
